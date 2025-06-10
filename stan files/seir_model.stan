@@ -83,8 +83,8 @@ model {
 
 generated quantities {
   real R0 = beta / gamma;
-  real recovery_time = 1 / sigma;
-  real incubation_period = 1 / gamma;
+  real recovery_time = 1 / gamma;
+  real incubation_period = 1 / sigma;
   
   array[T] real predicted_cases; // Predicted number of observed cases
   //predicted_cases = neg_binomial_2_rng(incidence, phi);
